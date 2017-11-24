@@ -11,7 +11,7 @@
       $.get("https://ipinfo.io", function (response) {
           usergeolocation = response.region;
       }, "jsonp");
-      var userLang = navigator.language || navigator.userLanguage || usergeolocation;
+      var userlang = navigator.language || navigator.userLanguage || usergeolocation;
       if (userlang.toLowerCase().includes("tw") || userlang.toLowerCase().includes("zh")) {
         window.location = 'https://ascxz.ml/vote-for-the-project-name-tw/';
         document.write('<a href="https://ascxz.ml/vote-for-the-project-name-tw/"><h1>Click here if you\'re not redirected...</h1></a>');
